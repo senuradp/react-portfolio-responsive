@@ -12,7 +12,8 @@
     --text-color: hsl(0,0%, 92%);
     --bg-color: hsl(216,18%, 16%);
     --bg-color-alt: hsl(213,10%, 21%);
-    --container-color: hsl(217,18%, 40%);
+    --container-color: hsl(217, 16%, 16%);
+    /* --container-color: hsl(217,18%, 40%); */
     --border-color: hsl(210,2%, 65%);
     --first-gradient: linear-gradient(
         0deg, 
@@ -108,4 +109,69 @@ button{
 
 img{
     max-width: 100%;
+}
+
+/* re usable css classes */
+
+.container{
+    max-width: 1300px;
+    padding-inline: 12px;
+    margin-inline: auto;
+}
+
+@media (min-width: 1600px){
+    .container{
+        max-width: 1500px;
+    }
+}
+
+
+
+.text-cs{
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.btn, 
+.hero__link{
+    color: var(--title-color);
+    font-size: var(--tiny-font-size);
+    font-weight: 700;
+    height: 56px;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.btn{
+    border: 2px solid var(--border-color);
+    padding-inline: 40px;
+    border-radius: 56px;
+    box-shadow: var(--shadow);
+}
+
+
+.btn::before{
+    content:'';
+    position: absolute;
+    inset: 2px;
+    background-color: var(--primary-color);
+    border-radius: inherit;
+    transform: scale(0.3);
+    filter: blur(10px);
+    opacity: 0;
+    transition: all 0.7s var(--transition);
+    z-index: -1;
+}
+
+.btn:hover::before{
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 1;
+}
+
+.shape{
+    position: absolute;
+    filter: invert(1);
+    opacity: 0.6;
 }
