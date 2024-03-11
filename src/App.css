@@ -10,9 +10,11 @@
     --primary-color: hsl(165,60%, 40%);
     --title-color: hsl(0,0%, 100%);
     --text-color: hsl(0,0%, 92%);
-    --bg-color: hsl(216,18%, 16%);
-    --bg-color-alt: hsl(213,10%, 21%);
-    --container-color: hsl(217, 16%, 16%);
+    --bg-color: hsl(220, 13%, 18%);
+    /* --bg-color: hsl(217, 11%, 14%); */
+    --bg-color-alt: hsl(212, 34%, 63%);
+    --container-color: hsl(220, 15%, 16%);
+    /* --container-color: hsl(218, 18%, 18%); */
     /* --container-color: hsl(217,18%, 40%); */
     --border-color: hsl(210,2%, 65%);
     --first-gradient: linear-gradient(
@@ -141,6 +143,7 @@ img{
     display: grid;
     place-items: center;
     position: relative;
+    z-index: 1;
 }
 
 .btn{
@@ -174,4 +177,67 @@ img{
     position: absolute;
     filter: invert(1);
     opacity: 0.6;
+}
+
+.section{
+    padding-bottom: 220px;
+}
+
+.section__title,
+.section__subtitle{
+    text-align: center;
+}
+
+.section__title{
+    font-size: var(--h1-font-size);
+}
+
+.section__subtitle{
+    color: var(--primary-color);
+    font-size: var(--smaller-font-size);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.section__subtitle span {
+    font-family: var(--second-font);
+    color: var(--title-color);
+    font-size: var(--h3-font-size);
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+
+.card{
+    background-color: var(--container-color);
+    overflow: hidden;
+    text-align: left;
+}
+
+.card-one{
+    padding: 30px 35px;
+    border-radius: 18px;
+}
+
+.link{
+    display: inline-flex;
+    align-items: center;
+    color: var(--title-color);
+    font-weight: 700;
+}
+.link__icon{
+    color: var(--primary-color);
+    margin-left: 20px;
+    transition: all 0.3s var(--transition);
+}
+
+.link:hover .link__icon{
+    margin-left: 15px;
+}
+
+.c__shape{
+    right: -24px;
+    bottom: -24px;
+    width: 141px;
+    height: 141px;
 }

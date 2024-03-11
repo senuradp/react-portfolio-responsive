@@ -1,14 +1,22 @@
 .home{
     /* background-color: var(--first-gradient); */
-    background-image: var(--first-gradient);
+    /* background-image: var(--first-gradient); */
     min-height: 100vh;
     display: grid;
     align-items: center;
+    /* padding-bottom: 180px; */
+    padding-bottom: 200px;
 }
 
 .home__container{
     width: 100%;
     position: relative;
+}
+
+.home__wrapper{
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
 }
 
 .home__subtitle,
