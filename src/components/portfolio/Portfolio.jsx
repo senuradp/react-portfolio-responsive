@@ -3,6 +3,7 @@ import List from './List';
 import Items from './Items';
 import { projects } from '../../Data';
 import './portfolio.css';
+import { AnimatePresence } from 'framer-motion';
 
 const allNavList = [
     'All', 
@@ -38,7 +39,9 @@ const Portfolio = () => {
             <List list={navList} filterItems={filterItems}/>
 
             <div className="portfolio__container container grid">
-                <Items projectItems={projectItems}/>
+                <AnimatePresence initial={false}>
+                    <Items projectItems={projectItems}/>
+                </AnimatePresence>
             </div>
 
         </section>
