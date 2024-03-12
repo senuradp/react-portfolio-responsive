@@ -46,13 +46,13 @@ const Services = () => {
         modules={[Pagination]}
         >
 
-            {services.map(({name, title, description}, index) => {
+            {services.map((service, index) => {
                 return(
-                    <SwiperSlide className="services__item card card-one">
-                        <span className="services__subtitle text-cs">{name}</span>
+                    <SwiperSlide className="services__item card card-one" key={index}>
+                        <span className="services__subtitle text-cs">{service.name}</span>
                         
-                        <h3 className="services__title">{title}</h3>
-                        <p className="services__description">{description}</p>
+                        <h3 className="services__title">{service.title}</h3>
+                        <p className="services__description">{service.description}</p>
 
                         <a href="" className="link">See Pricing <FaArrowRight className='link__icon'></FaArrowRight></a>
 
