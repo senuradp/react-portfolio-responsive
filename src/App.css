@@ -127,7 +127,10 @@ img{
     }
 }
 
-
+.grid{
+    display: grid;
+    gap: 24px;
+}
 
 .text-cs{
     text-transform: uppercase;

@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import Home from './components/home/Home.jsx'
 import Services from './components/services/Services.jsx'
+import Skills from './components/skills/Skills.jsx'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <main className='main'>
       <Home />
       <Services />
+      <Skills />
     </main>
   )
 }
