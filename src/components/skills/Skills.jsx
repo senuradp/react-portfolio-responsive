@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-key */
 import React from 'react'
 import { skills } from '../../Data'
@@ -14,25 +15,25 @@ const Skills = () => {
         </p>
 
         <div className="skills__container container grid">
-            {skills.map((item, index) => {
+            {skills.map((skill, index) => {
                 return(
                     <div className="skills__content"  key={index}>
                         <div className="skills__data">
                             <div className="skills__titles">
-                                <h3 className="skills__name">{item.name}</h3>
+                                <h3 className="skills__name">{skill.name}</h3>
                                 <span className="skills__number">
-                                    {item.percentage} <span>%</span>
+                                    {skill.percentage} <span>%</span>
                                 </span>
                             </div>
 
                             <p className="skills__description">
-                            {item.description}
+                            {skill.description}
                         </p>
 
                         <div className="skills__bar">
                             <span 
                                 className="skills__percentage" 
-                                style={{ width: `${item.percentage}%` }}
+                                style={{ width: `${skill.percentage}%` }}
                             >
                                 <span></span>
                             </span>
