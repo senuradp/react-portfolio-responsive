@@ -5,6 +5,8 @@ import Services from './components/services/Services.jsx';
 import Skills from './components/skills/Skills.jsx';
 import Portfolio from './components/portfolio/Portfolio.jsx';
 import Resume from './components/resume/Resume.jsx';
+import Testimonials from './components/testimonials/Testimonials.jsx';
+import Contact from './components/contact/Contact.jsx';
 
 function App() {
 
@@ -15,6 +17,8 @@ function App() {
       <Skills />
       <Portfolio />
       <Resume />
+      <Testimonials />
+      <Contact />
     </main>
   )
 }
