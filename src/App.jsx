@@ -7,6 +7,7 @@ import Portfolio from './components/portfolio/Portfolio.jsx';
 import Resume from './components/resume/Resume.jsx';
 import Testimonials from './components/testimonials/Testimonials.jsx';
 import Contact from './components/contact/Contact.jsx';
+import Footer from './components/footer/Footer.jsx';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Resume />
       <Testimonials />
       <Contact />
+      <Footer />
     </main>
   )
 }
