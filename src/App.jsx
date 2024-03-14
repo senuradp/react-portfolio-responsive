@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import Header from './components/header/Header.jsx';
 import Home from './components/home/Home.jsx';
 import Services from './components/services/Services.jsx';
 import Skills from './components/skills/Skills.jsx';
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <main className='main'>
+      <Header />
       <Home />
       <Services />
       <Skills />
