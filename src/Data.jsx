@@ -53,39 +53,39 @@ export const links = [
 export const services = [
   {
     id: 1,
-    name: 'Web Development',
-    title: 'Web Design & Logo',
+    name: ' Web & Mobile Design',
+    title: ' Figma UI / UX ',
     description:
-      'Web designers craft the overall vision & plan for a website layout. Professional logo development: Business, Company, or Personal.',
+      'Design Software applications to visualize & plan the product before development.',
   },
   {
     id: 2,
-    name: ' Apps Development ',
-    title: ' iOS & Android ',
+    name: 'Web Development',
+    title: 'Website Development',
     description:
-      'Design Software applications to run on mobile devices. Modern and mobile-ready application that will help you reach all of your marketing.',
+      'Develop websites using upto date frameworks with a more professional and an attractive approach.',
   },
   {
     id: 3,
-    name: ' Game Development ',
-    title: ' Unity & Unreal Engine ',
+    name: ' Apps Development ',
+    title: 'Android & iOS',
     description:
-      ' Creating games & describes the design, development and release of a game. Developing unique mobile android and ios games. ',
+      'Design Software applications to run on mobile devices. Modern and mobile-ready application that will help you reach all of your marketing.',
   },
-  {
-    id: 4,
-    name: ' Advertising ',
-    title: ' Google Ads ',
-    description:
-      ' Advertising services include: Google search result pages, gmails, YouTube and other websites participated in Google Ads program. ',
-  },
-  {
-    id: 5,
-    name: ' Music Writing ',
-    title: ' Sound Track ',
-    description:
-      'Music copying, writing, creating, transcription and composition services.',
-  },
+  // {
+  //   id: 4,
+  //   name: ' Advertising ',
+  //   title: ' Google Ads ',
+  //   description:
+  //     ' Advertising services include: Google search result pages, gmails, YouTube and other websites participated in Google Ads program. ',
+  // },
+  // {
+  //   id: 5,
+  //   name: ' Music Writing ',
+  //   title: ' Sound Track ',
+  //   description:
+  //     'Music copying, writing, creating, transcription and composition services.',
+  // },
 ];
 
 export const skills = [
@@ -115,8 +115,8 @@ export const skills = [
 
   {
     id: 4,
-    name: 'Python',
-    percentage: 75,
+    name: 'Java',
+    percentage: 60,
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
@@ -124,7 +124,7 @@ export const skills = [
   {
     id: 5,
     name: 'React',
-    percentage: 70,
+    percentage: 50,
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },

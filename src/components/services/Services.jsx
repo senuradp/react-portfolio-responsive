@@ -54,7 +54,7 @@ const Services = () => {
                         <h3 className="services__title">{service.title}</h3>
                         <p className="services__description">{service.description}</p>
 
-                        <a href="" className="link">See Pricing <FaArrowRight className='link__icon'></FaArrowRight></a>
+                        <a href="#contact" className="link">Contact Me <FaArrowRight className='link__icon'></FaArrowRight></a>
 
                         <img src={shapeTwo} alt="" className="shape c__shape" />
                     </SwiperSlide>
