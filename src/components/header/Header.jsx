@@ -4,9 +4,17 @@ import { links } from "../../Data";
 import { FaTwitter, FaInstagram } from "react-icons/fa";
 import { BsSun, BsMoon } from "react-icons/bs";
 
+import { Link } from 'react-scroll';
+
+import { animateScroll } from "react-scroll";
+
 const Header = () => {
 
     const [showMenu, setShowMenu] = useState(false);
+
+    const scrollTop = () => {
+        animateScroll.scrollToTop();
+    }
 
     // to hide the scrollbar when the nav is open
     useEffect(() => {
@@ -16,9 +24,9 @@ const Header = () => {
     return (
         <header className="header">
         <nav className="nav">
-            <a href="" className="nav__logo text-cs">
+            <Link to="/" onClick={scrollTop} className="nav__logo text-cs">
             Senura
-            </a>
+            </Link>
 
             <div className={`${showMenu ? 'nav__menu show-menu' : 'nav__menu'}`}>
                 <div className="nav__data">
@@ -26,9 +34,21 @@ const Header = () => {
                     {links.map(({ name, path }, index) => {
                         return (
                         <li className="nav__item" key={index}>
-                            <a href={path} className="nav__link text-cs">
+                            {/* <a href={path} className="nav__link text-cs">
                             {name}
-                            </a>
+                            </a> */}
+                            <Link 
+                                className="nav__link text-cs"
+                                to={path} 
+                                spy={true}
+                                hashSpy={true} 
+                                smooth={true} 
+                                offset={-150} 
+                                duration={500}
+                                onClick={() => {setShowMenu(!showMenu)}}
+                            >
+                                {name}  
+                            </Link>
                         </li>
                         );
                     })}
