@@ -27,6 +27,7 @@ const Testimonials = () => {
         pagination={{
             clickable: true,
         }}
+        spaceBetween={30}
         breakpoints={{
             540: {
                 slidesPerView: 1,
