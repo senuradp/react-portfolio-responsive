@@ -220,8 +220,14 @@ img{
     opacity: 0.6;
 }
 
+.light-theme .shape{
+    filter: invert(0);
+    opacity: 0.6;
+}
+
 .shape{
     position: absolute;
+    filter: invert(1);
 }
 /*  */
 
