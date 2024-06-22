@@ -87,6 +87,11 @@ const Home = () => {
             </div>
 
         </div>
+
+        <div className="section__bg-wrapper">
+            <span className="bg__title">Web Developer</span>
+        </div>
+
     </section>
   )
 }

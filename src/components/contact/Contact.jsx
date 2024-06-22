@@ -143,6 +143,9 @@ const Contact = () => {
           <img src={shapeOne} alt="" className='shape'/>
       </div>
 
+      <div className="section__bg-wrapper">
+          <span className="bg__title">Contact Me</span>
+      </div>
 
     </section>
   );
