@@ -12,6 +12,7 @@ import { Pagination } from 'swiper/modules';
 
 import { FaArrowRight } from 'react-icons/fa';
 
+import shapeOne from '../../assets/shape-1.png';
 import shapeTwo from "../../assets/shape-2.png";
 
 const Services = () => {
@@ -62,6 +63,11 @@ const Services = () => {
             })}
 
         </Swiper>
+
+        <div className="section__deco deco__right">
+            <img src={shapeOne} alt="" className='shape'/>
+        </div>
+
     </section>
   )
 }

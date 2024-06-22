@@ -3,6 +3,7 @@
 import React from 'react'
 import { skills } from '../../Data'
 import './skills.css'
+import shapeOne from '../../assets/shape-1.png';
 
 const Skills = () => {
   return (
@@ -43,6 +44,11 @@ const Skills = () => {
                 )
             })}
         </div>
+
+        <div className="section__deco deco__left">
+            <img src={shapeOne} alt="" className='shape'/>
+        </div>
+
     </section>
   )
 }

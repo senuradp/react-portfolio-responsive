@@ -27,8 +27,8 @@ const Items = ({projectItems}) => {
                     <p className="portfolio__description">{description}</p>
 
 
-                    <a href="" className="link">
-                        See Pricing
+                    <a href="#contact" className="link">
+                        Contact Me
                         <FaArrowRight className='link__icon'></FaArrowRight>
                     </a>
                     <img src={shapeTwo} alt="" className="shape c__shape" />
